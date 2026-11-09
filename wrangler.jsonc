@@ -1,0 +1,13 @@
+{
+  // Static site: `npm run build` exports Next.js to ./out, and Wrangler uploads it.
+  // Having this file stops `wrangler deploy` from auto-configuring the project
+  // (which installs the latest wrangler and breaks the npm install).
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "slc-website",
+  "compatibility_date": "2026-05-15",
+  "assets": {
+    "directory": "./out",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  }
+}

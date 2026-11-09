@@ -43,3 +43,9 @@ yarn-error.log*
 
 # OS metadata
 .DS_Store
+
+# Dropbox sync metadata and conflict copies
+.dropbox
+.dropbox.attr
+.dropbox.cache/
+*conflicted copy*
