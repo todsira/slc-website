@@ -1,0 +1,13 @@
+SLC website with customer self-quotation
+
+Upload the CONTENTS of slc-website into the same GitHub repository as your existing website. Back up existing changes first; this package is based on the last site version delivered in chat, not a checked-out GitHub repo.
+
+Cloudflare Pages: framework Next.js (Static HTML Export); build command npm run build; output directory out; NODE_VERSION 24.22.1. No Worker, API key, database, or PDF service is required.
+
+The route is /quotation/. Once your slc.co.th domain points to this Pages project, it will be available at https://slc.co.th/quotation/. No separate DNS record is needed for this path. This package does not configure DNS or deploy to your account.
+
+To update an existing package without replacing unrelated files, copy app/quotation/ and public/fonts/, then add a /quotation/ link to your home-page navigation. Keep output: export and trailingSlash: true in next.config.ts. The quotation page reads app/content.ts for the current product list and prices.
+
+Prices are dated 17 April 2026, not live. Confirm current prices and VAT treatment before presenting the output as an official quotation. The current PDF explicitly says it is a preliminary estimate, excludes transport, and marks VAT as unconfirmed. No binding payment terms or validity period are invented.
+
+The browser produces the PDF locally using a bundled Thai font. Customer information is not submitted to the company or stored. The customer must contact the quarry to proceed. PDF text is rendered as an image for reliable Thai shaping and is not searchable.

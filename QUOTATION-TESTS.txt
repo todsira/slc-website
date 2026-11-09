@@ -1,0 +1,10 @@
+Verified 7 November 2026:
+- TypeScript noEmit passed on Site source.
+- Sites production build passed.
+- Next.js static production export passed, including out/quotation/index.html.
+- Browser: Thai customer fields, two selected products (12.50 t x 230 plus 2 t x 70 = 3,015 THB), successful direct PDF download.
+- Browser: negative quantity rejected; deselection removes line and recalculates total.
+- Browser: all 10 products plus long Thai address produced a valid A4 PDF; rendered PDF inspected for Thai shaping, totals, wrapping, and footer.
+- Repeated download succeeded.
+- Responsive CSS supplied; narrow-screen and physical iOS/Android download testing not performed.
+- GitHub/Cloudflare deployment and custom-domain DNS not performed.
