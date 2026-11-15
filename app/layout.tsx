@@ -7,5 +7,5 @@ export const metadata: Metadata = {
   icons: { icon: "/favicon.svg?v=dd447d1f" },
 };
 export default function RootLayout({children}: Readonly<{children: React.ReactNode}>) {
- return <html lang="th"><head><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous"/><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;600;700;800&display=swap" rel="stylesheet"/></head><body>{children}</body></html>;
+ return <html lang="th"><head><meta name="facebook-domain-verification" content="eaody148p6epcqxxrloa2scjj900nm"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous"/><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;600;700;800&display=swap" rel="stylesheet"/></head><body>{children}</body></html>;
 }
